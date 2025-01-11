@@ -7,6 +7,7 @@ import (
 	"os"
 	"os/exec"
 	"strings"
+	"time"
 )
 
 func runCommand(cmd string) error {
@@ -35,19 +36,18 @@ func pushToGit(outputDir, branchName string) error {
 	}
 
 	// Commit the changes
-	if err := runCommand("git commit -m 'Deploy build output'"); err != nil {
+	commitMessage := fmt.Sprintf("Deploy-%s", time.Now().Format("2006-01-02T15:04:05"))
+	if err := runCommand(fmt.Sprintf("git commit -m '%s'", commitMessage)); err != nil {
 		return fmt.Errorf("failed to commit files: %v", err)
 	}
 
-	// Set the remote URL (assumed to be on GitHub, adjust as necessary)
-	// You should replace with your actual repository URL
-	remoteURL := "https://github.com/yourusername/yourrepo.git"
+	remoteURL := "git@github.com:IndieCoderMM/indiecoder.git"
 	if err := runCommand(fmt.Sprintf("git remote add origin %s", remoteURL)); err != nil {
 		return fmt.Errorf("failed to add remote URL: %v", err)
 	}
 
 	// Push the commit to the specified branch
-	if err := runCommand(fmt.Sprintf("git push -f origin master:%s", branchName)); err != nil {
+	if err := runCommand(fmt.Sprintf("git push -f origin main:%s", branchName)); err != nil {
 		return fmt.Errorf("failed to push to git branch %s: %v", branchName, err)
 	}
 
