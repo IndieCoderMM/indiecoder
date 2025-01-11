@@ -1,4 +1,4 @@
-baseURL = "https://indiecodermm.github.io/"
+baseURL = "https://indiecoder.vercel.app/"
 languageCode = "en-us"
 title = "IndieCoder"
 theme="archie"
