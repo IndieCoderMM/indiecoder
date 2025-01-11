@@ -1,5 +1,5 @@
 <footer>
-  <div style="display:flex">
+  <div style="display:flex;">
     {{- range $index, $key := .Site.Params.Social -}}
     {{- if hasPrefix $key.icon "simple:" -}}
     <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}" target="_blank"><i class="si si-{{ substr $key.icon 7 }}"></i></a>
@@ -10,8 +10,8 @@
     {{- end -}}
   </div>
   <div class="footer-info">
-    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} <span class="separator"></span> {{ end }} <a
-      href="https://github.com/athul/archie">Archie Theme</a>
+   &copy; {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} <span class="separator"></span> {{ end }} <a
+      href="https://github.com/indiecodermm/indiecoder" target="_blank">This site is open source</a>
   </div>
 </footer>
 {{ if not hugo.IsServer }}
