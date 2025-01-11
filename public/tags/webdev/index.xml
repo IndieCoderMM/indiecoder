@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webdev on IndieCoder</title>
+    <link>http://localhost:1313/tags/webdev/</link>
+    <description>Recent content in Webdev on IndieCoder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Hein Thant</copyright>
+    <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Custom Theme Switcher Hook in React</title>
+      <link>http://localhost:1313/blogs/react-theme-hook/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/react-theme-hook/</guid>
+      <description>In this tutorial, I’ll show you how to build a custom theme switcher hook in React. By the end, you’ll have a reusable hook that can add dark/light mode to any React project.&#xA;We’ll cover:&#xA;Creating the hook step-by-step. Saving the user’s theme preference. Adding dark/light mode toggle functionality. Logic Here’s how the custom hook works:&#xA;It checks for a saved theme in local storage. If no saved theme is found, it checks the system’s dark mode preference.</description>
+    </item>
+  </channel>
+</rss>
