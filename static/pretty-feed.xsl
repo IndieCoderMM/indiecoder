@@ -51,14 +51,15 @@ This file is in BETA. Please test and contribute to the discussion:
 				<style type="text/css">
 					:root {
             --main: #24d05a;
-            --highlight: #EA2B1F;
+            --hover: #EA2B1F;
+            --highlight: #e9bc3f;
             --night: #1B1B1E;
             --light: #ffffff;
 					}
 
 					::selection {
 						background-color: var(--highlight);
-						color: var(--black);
+						color: black;
 					}
 
         html {
@@ -97,8 +98,9 @@ This file is in BETA. Please test and contribute to the discussion:
           }
 
           a:hover {
-            background-color: var(--highlight);
-            color: #fff;
+            background-color: white;
+            border-color: var(--hover);
+            color: black;
           }
 				</style>
 			</head>

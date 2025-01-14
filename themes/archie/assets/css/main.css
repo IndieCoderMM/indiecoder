@@ -7,6 +7,7 @@
   --darkMainColor: #24d05a;
   --darkHoverColor: #EA2B1F;
   --night: #1B1B1E;
+  --highlight: #e9bc3f;
 }
 
 html {
@@ -26,8 +27,8 @@ body {
 }
 
 ::selection {
-  background: var(--maincolor);
-  color: #fff;
+  background: var(--highlight);
+  color: black;
 }
 
 p {
