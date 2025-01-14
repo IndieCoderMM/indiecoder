@@ -1,6 +1,6 @@
 ---
 title: Custom Theme Switcher Hook in React
-description: Learn how to build a reusable theme switcher hook in React to seamlessly toggle between dark and light modes, with persistence across sessions.
+description: Learn how to build a reusable theme switcher hook in React with persistence across sessions.
 date: 2023-10-04
 tags: [react, frontend, webdev, js]
 ---

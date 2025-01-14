@@ -257,6 +257,7 @@ footer {
 .footer-info {
   flex: 1;
   display: flex;
+  font-size: 0.9rem;
 }
 
 

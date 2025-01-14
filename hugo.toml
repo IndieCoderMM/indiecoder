@@ -8,7 +8,7 @@ pygmentsstyle = "github-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "heinthant"
+disqusShortname = "indiecoder"
 
 paginate=3 # articles per page  
 
@@ -19,8 +19,11 @@ paginate=3 # articles per page
 	mathjax = false # enable MathJax support
 	katex = false # enable KaTeX support
 
-# Social Tags
+  [params.author]
+    email = 'hthant00chk@gmail.com'
+    name = 'Hein Thant'
 
+# Social Tags
 [[params.social]]
 name = "GitHub"
 icon = "simple:github"
@@ -29,7 +32,7 @@ url = "https://github.com/indiecodermm/"
 [[params.social]]
 name = "BlueSky"
 icon = "simple:bluesky"
-url = "https://twitter.com/hthantoo/"
+url = "https://bsky.app/profile/heinthantoo.bsky.social"
 
 [[params.social]]
 name = "LinkedIn"
@@ -38,9 +41,14 @@ url = "https://www.linkedin.com/in/hthantoo/"
 
 # Main menu Items
 
+# [[menu.main]]
+# name = "Home"
+# url = "/"
+# weight = 1
+
 [[menu.main]]
-name = "Home"
-url = "/"
+name = "About"
+url = "/about"
 weight = 1
 
 [[menu.main]]
@@ -49,8 +57,8 @@ url = "/blogs"
 weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about"
+name = "Library"
+url = "/library"
 weight = 3
 
 [[menu.main]]

@@ -1,7 +1,7 @@
 +++
 title = "About Me"
 description = "Coder, Learner, Creator"
-date = "2025-01-11"
+date = "2025-01-01"
 +++
 
 Hello! I'm **Hein Thant**, a self-taught developer from *Myanmar*. I build mobile apps, web apps, and half-finished side projects. 

@@ -3,6 +3,11 @@
   {{ if not (.UseCDN | default false) -}}
     {{- $featherURL = (resources.Get "svg/feather-sprite.svg" | fingerprint).RelPermalink -}}
   {{- end -}}
+
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
 <svg class="feather">
    <use href="{{ printf "%s#%s" $featherURL .Icon }}" />
 </svg>

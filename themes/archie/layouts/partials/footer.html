@@ -10,8 +10,9 @@
     {{- end -}}
   </div>
   <div class="footer-info">
-   &copy; {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} <span class="separator"></span> {{ end }} <a
-      href="https://github.com/indiecodermm/indiecoder" target="_blank">This site is open source</a>
+    &copy; {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} <span style="margin-left: auto;"></span> {{ end }} <a
+      href="https://github.com/indiecodermm/indiecoder" target="_blank">Source code</a>
+  <span class="separator"></span> <a href="/index.xml">Subscribe RSS</a>
   </div>
 </footer>
 {{ if not hugo.IsServer }}
