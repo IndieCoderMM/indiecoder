@@ -143,18 +143,10 @@ This file is in BETA. Please test and contribute to the discussion:
 								<path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
 							</svg>
 
-							Web Feed Preview
+              IndieCoder's Web Feed
 						</h1>
-						<p><xsl:value-of select="/rss/channel/description"/></p>
-						<a class="head_link">
-							<xsl:attribute name="href">
-								<xsl:value-of select="/rss/channel/link"/>
-							</xsl:attribute>
-							&#x2190; Go back to IndieCoder
-						</a>
 					</header>
-
-					<h2>Recent Posts</h2>
+					<h2>Recent Posts on IndieCoder</h2>
 					<xsl:for-each select="/rss/channel/item">
 						<div>
 							<h3>

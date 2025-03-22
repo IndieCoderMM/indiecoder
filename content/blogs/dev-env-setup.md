@@ -46,7 +46,7 @@ ID_LIKE="ubuntu debian"
 2. Run: `chmod u+x nvim-linux-x86_64.appimage`
 3. Move to bin: `sudo mv nvim-linux-x86_64.appimage /usr/local/bin/nvim`
 4. Clone config to `~/.config/nvim`: [IndieCoderMM/nvim-config](https://github.com/IndieCoderMM/nvim-config)
-5. Run `nvim` to install deps.
+5. Run `nvim` to setup and install deps.
 
 ```sh 
 # Main plugins
