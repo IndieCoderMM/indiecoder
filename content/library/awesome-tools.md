@@ -1,7 +1,7 @@
 ---
 title: Awesome Online Tools
 description: A collection of online tools that I use to make my life easier.
-date: 2025-02-22
+date: 2025-03-22
 tags: [collection, tool, productivity]
 ---
 
