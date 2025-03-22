@@ -1,6 +1,6 @@
 ---
 title: Upload Files to AWS S3 from React
-description: Learn how to upload images/videos directly from a React Client to an AWS S3 bucket.
+description: Learn how to upload images/videos directly from React to S3.
 date: 2024-01-25
 tags: [react, frontend, webdev, js]
 ---

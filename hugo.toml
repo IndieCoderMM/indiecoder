@@ -10,7 +10,8 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "indiecoder"
 
-paginate=3 # articles per page  
+[pagination]
+  pagerSize = 3
 
 [params]
 	mode="dark" # color-mode → light,dark,toggle or auto
@@ -47,21 +48,22 @@ url = "https://www.linkedin.com/in/hthantoo/"
 # weight = 1
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 1
-
-[[menu.main]]
 name = "Blogs"
 url = "/blogs"
-weight = 2
+weight = 1
 
 [[menu.main]]
 name = "Library"
 url = "/library"
-weight = 3
+weight = 2
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
 weight = 4
+
