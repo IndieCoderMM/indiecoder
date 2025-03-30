@@ -1,7 +1,7 @@
 ---
 title: My Dev Environment Setup
 description: How I setup my dev environment on a new machine.
-date: 2025-03-22
+date: 2025-03-30
 tags: [tool, personal]
 ---
 
@@ -77,5 +77,41 @@ ID_LIKE="ubuntu debian"
 
 1. Run nerd font installer: [NF Installer](https://github.com/officialrajdeepsingh/nerd-fonts-installer)
 2. Choose font: [Caskaydia Cove Nerd Font](https://www.nerdfonts.com/font-downloads)
+
+## Android Development Setup
+
+### JDK Installation
+
+1. Update and search for JDK: `sudo apt-get update && apt search openjdk`
+2. Install JDK: `sudo apt-get install openjdk-21-jdk`
+3. Check installation: `java -version`
+
+## Android SDK Setup
+
+1. Download the latest version of cmd tools: [Android CMD tools](https://developer.android.com/studio#command-tools)
+2. Make a new Android SDK folder: `mkdir -p ~/Android/Sdk/cmdline-tools`
+3. Extract the downloaded file to the new folder. `unzip -d ~/Android/Sdk/cmdline-tools ~/Downloads/android-cmd-tools.zip`
+4. Rename the folder: `mv ~/Android/Sdk/cmdline-tools/cmdline-tools/ ~/Android/Sdk/cmdline-tools/latest`
+5. Add the following to `.zshrc` or `.bashrc`:
+```sh
+export PATH=~/Android/Sdk/cmdline-tools/latest/bin:~/Android/Sdk/emulator:~/Android/Sdk/platform-tools:$PATH
+export ANDROID_HOME=~/Android/Sdk
+```
+
+## Emulator Setup
+
+1. List available system images: `sdkmanager --list`
+2. Install the desired version: `sdkmanager "emulator" "platform-tools" "platforms;android-36" "system-images;android-36;google_apis;x86_64"`
+3. List available devices: `avdmanager list device`
+4. Setup AVD with a device: `avdmanager -v create avd -n Android_API_36_Google -k "system-images;android-36;google_apis;x86_64" -d pixel_c`
+5. Run the emulator: `emulator -avd Android_API_36_Google`
+6. Configure the device in `~/.android/avd/Android_API_36_Google.avd/config.ini`:
+7. Enable this line to direct key events to emulator:
+```sh 
+hw.keyboard = yes
+```
+
+*Source: [Minimal CLI Android Emulator](https://blogs.igalia.com/jaragunde/2023/12/setting-up-a-minimal-command-line-android-emulator-on-linux/)*
+
 
 That's all for now. I'll update this post as I add more tools to my setup.
