@@ -1,7 +1,7 @@
 ---
 title: Unhooked from YouTube
 description: How I optimize my YouTube experience using Unhook.
-date: 2025-05-01
+date: 2025-05-01T22:00:00+06:30
 tags: [productivity, tool, minimalism]
 ---
 

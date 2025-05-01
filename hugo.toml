@@ -16,7 +16,7 @@ disqusShortname = "indiecoder"
 [params]
 	mode="dark" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "Just a blog for a coder's thoughts, experiences and everything in between."
+	subtitle = "Just writing down my journey and things I've learned. Occasionally sound like I know what I'm doing."
 	mathjax = false # enable MathJax support
 	katex = false # enable KaTeX support
 

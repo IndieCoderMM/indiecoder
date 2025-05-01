@@ -1,7 +1,7 @@
 ---
 title: My Dev Environment Setup
 description: How I setup my dev environment on a new machine.
-date: 2025-05-01
+date: 2025-05-01T09:00:00+06:30
 tags: [tool, personal]
 ---
 
