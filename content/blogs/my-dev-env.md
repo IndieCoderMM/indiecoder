@@ -1,7 +1,7 @@
 ---
 title: My Dev Environment Setup
 description: How I setup my dev environment on a new machine.
-date: 2025-03-30
+date: 2025-05-01
 tags: [tool, personal]
 ---
 
@@ -31,6 +31,8 @@ ID_LIKE="ubuntu debian"
 4. **Zoxide** (Better cd): `curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh` 
 5. **Bpytop** (Resource monitoring): `sudo apt install bpytop`
 6. **OneFetch** (Git info): [Repo](https://github.com/o2sh/onefetch)
+7. **RipGrep** (Search tool): `sudo apt-get install ripgrep`
+8. **LazyDocker** (Docker TUI): [Repo](https://github.com/jesseduffield/lazydocker)
 
 ## Shell Setup: Oh My Zsh
 
@@ -59,7 +61,7 @@ ID_LIKE="ubuntu debian"
 7. Harpoon
 8. Kulala
 9. GitSigns
-10. NvChad-Ui 
+10. NvChad-Ui
 11. FriendlySnippets
 12. TodoComments
 13. Treesitter
@@ -86,7 +88,7 @@ ID_LIKE="ubuntu debian"
 2. Install JDK: `sudo apt-get install openjdk-21-jdk`
 3. Check installation: `java -version`
 
-## Android SDK Setup
+### Android SDK Setup
 
 1. Download the latest version of cmd tools: [Android CMD tools](https://developer.android.com/studio#command-tools)
 2. Make a new Android SDK folder: `mkdir -p ~/Android/Sdk/cmdline-tools`
@@ -98,7 +100,7 @@ export PATH=~/Android/Sdk/cmdline-tools/latest/bin:~/Android/Sdk/emulator:~/Andr
 export ANDROID_HOME=~/Android/Sdk
 ```
 
-## Emulator Setup
+### Emulator Setup
 
 1. List available system images: `sdkmanager --list`
 2. Install the desired version: `sdkmanager "emulator" "platform-tools" "platforms;android-36" "system-images;android-36;google_apis;x86_64"`
@@ -113,5 +115,29 @@ hw.keyboard = yes
 
 *Source: [Minimal CLI Android Emulator](https://blogs.igalia.com/jaragunde/2023/12/setting-up-a-minimal-command-line-android-emulator-on-linux/)*
 
+## Obsidian Setup
+
+1. Download obsidian app image: [Obsidian](https://obsidian.md/download)
+2. Make it executable: `chmod +x Obsidian.AppImage`
+3. Move to `Apps` folder: `mv Obsidian.AppImage ~/Apps/`
+4. Create a desktop entry in `~/.local/share/applications/obsidian.desktop`:
+```sh
+[Desktop Entry]
+Name=Obsidian
+Exec=/home/indie/Apps/Obsidian.AppImage
+Icon=/home/indie/Apps/Obsidian.AppImage
+Type=Application
+Categories=Utility;
+```
+5. Make it executable: `chmod +x ~/.local/share/applications/obsidian.desktop`
+6. Update desktop db: `update-desktop-database ~/.local/share/applications`
+
+## Docker Setup 
+
+1. Download and install docker engine: [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)
+2. Add your user to the docker group: `sudo usermod -aG docker $USER`
+3. Apply the change: `newgrp docker`
+4. Check docker installation: `docker run hello-world`
+5. Log out and log back in to apply the group changes.
 
 That's all for now. I'll update this post as I add more tools to my setup.
