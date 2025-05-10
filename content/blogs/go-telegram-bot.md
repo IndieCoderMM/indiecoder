@@ -7,7 +7,7 @@ tags: [go, webdev, backend]
 
 I recently built a simple Telegram bot using Go. The bot is designed to help users find information of a specific date. For example, if you send a message like "2025-01-10", the bot will respond with basic calendar information, fetched events and birthdays from Wikipedia, and a APOD image from NASA api. 
 
-I'll walk you through how I built it, and for the sake of simplicity, I'll skip detailed implementation and just show the necessary parts. You can see the full source code here: (github.com/IndieCoderMM/tele-droids)[https://github.com/IndieCoderMM/tele-droids/tree/master/chronobot]
+I'll walk you through how I built it, and for the sake of simplicity, I'll skip detailed implementation and just show the necessary parts. You can see the full source code here: [github.com/IndieCoderMM/tele-droids](https://github.com/IndieCoderMM/tele-droids/tree/master/chronobot)
 
 ## Approach
 
