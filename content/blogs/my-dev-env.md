@@ -33,6 +33,7 @@ ID_LIKE="ubuntu debian"
 6. **OneFetch** (Git info): [Repo](https://github.com/o2sh/onefetch)
 7. **RipGrep** (Search tool): `sudo apt-get install ripgrep`
 8. **LazyDocker** (Docker TUI): [Repo](https://github.com/jesseduffield/lazydocker)
+9. **DirEnv** (Env manager): [Repo](https://github.com/direnv/direnv)
 
 ## Shell Setup: Oh My Zsh
 
