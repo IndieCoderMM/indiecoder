@@ -137,11 +137,19 @@ func handleText(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 Our bot will respond to `/today` command with today's date and a list of information.
 
 ```go
-func HandleTodayInfo(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
+func HandleToday(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	t := time.Now()
-	milestones := utils.DaysUntil(t) // Get the number of days until next month, year, etc.
-
     body := fmt.Sprintf("📅 Today: *%s* - *%s*\n", t.Format("2006-01-02"), t.Weekday().String())
+
+	milestones := utils.DaysUntil(t) // Get the number of days until next month, year, etc.
+    body += fmt.Sprintf("\n🗓️ Days until:\n"+
+		" 🌙 Next month: *%d days*\n"+
+		" ☀️ Next year: *%d days*\n"+
+		" 🔟 Next decade: *%d days*\n"+
+		milestones.DaysToNextMonth,
+		milestones.DaysToNextYear,
+		milestones.DaysToNextDecade,
+	)
 
 	nasa, err := services.FetchNasaPhoto(t.Format("2006-01-02"))
 	if err == nil {
