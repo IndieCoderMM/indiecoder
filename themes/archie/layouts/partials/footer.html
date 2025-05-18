@@ -8,9 +8,12 @@
     {{- end -}}
     <span class="separator"></span>
     {{- end -}}
+    <span>
+&copy; {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} <span style="margin-left: auto;"></span> {{ end }} 
+    </span>
   </div>
   <div class="footer-info">
-    &copy; {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} <span style="margin-left: auto;"></span> {{ end }} <a
+    <a
       href="https://github.com/indiecodermm/indiecoder" target="_blank">Source code</a>
   <span class="separator"></span> <a href="/index.xml">Subscribe RSS</a>
   </div>
