@@ -10,6 +10,15 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "indiecoder"
 
+defaultContentLanguage = 'en'
+[languages]
+  [languages.mm]
+    languageName = 'MM'
+    weight = 2
+  [languages.en]
+    languageName = 'EN'
+    weight = 1
+
 [pagination]
   pagerSize = 3
 
