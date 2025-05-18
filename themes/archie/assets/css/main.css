@@ -29,9 +29,14 @@
 
 html {
   color: var(--night);
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Red Hat Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   font-size: 18px;
-  line-height: 1.6em;
+  line-height: 1.7em;
 }
 
 body {
@@ -125,6 +130,7 @@ figure h4::before {
 
 /* Code blocks */
 code {
+  font-family: 'Roboto Mono', monospace;
   background-color: #f1f1f1;
   padding: .1em .2em;
 }
@@ -144,7 +150,7 @@ pre {
 pre code {
   background-color: transparent;
   color: inherit;
-  font-size: 100%;
+  font-size: 90%;
   padding: 0;
 }
 
@@ -174,7 +180,6 @@ header .main {
 h1 {
   font-size: 1.4rem;
   margin-top: 2em;
-  font-weight: bolder;
 }
 
 h2,
@@ -486,6 +491,10 @@ table td {
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
+}
+
+#logo {
+  font-weight: 600;
 }
 
 #dark-mode-toggle {
