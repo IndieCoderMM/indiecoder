@@ -286,6 +286,7 @@ footer {
 .footer-info {
   flex: 1;
   display: flex;
+  justify-content: flex-end;
   font-size: 0.9rem;
 }
 
