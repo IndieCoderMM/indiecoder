@@ -31,9 +31,7 @@ Here is how I do these habits daily, for maximum productivity with minimum effor
 
 ## 1. Set your heart ablaze
 
-```
-🔥 Habit 1: Do 5 min cardio right after getting out of bed
-```
+{{< callout type="custom" emoji="🔥" title="Exercise" text="Do 5 min cardio right after getting out of bed" >}}
 
 This is the first thing I do in the morning everyday. The moment my feet hit the floor, I start doing these exercises *push ups, jumping jacks, mountain climbers*. Sometimes I go for one exercise untill failure. Other days, I do each one of these for 30-50 reps. I don't target any muscle groups or aim for strength. My goal is to get my heart rate up and keep moving for a solid 5 min with no rest. 
 
@@ -43,9 +41,7 @@ In fact, physical exercises **do not drain your energy, but actaully boost it** 
 
 ## 2. Clear mental cache
 
-```
-🧠 Habit 2: Pause, relax and breathe for 5 min
-```
+{{< callout type="custom" emoji="🧠" title="Meditate" text="Pause, relax and breathe for 5 min" >}}
 
 I like to meditate during the day, usually after an intense focus work like a long coding session. You just sit in relax, close your eye, and watch your natural breathing rhythm. Feel the air as it flows through your nose, fills your belly, and then leaves gently. 
 
@@ -57,9 +53,7 @@ I'm not going to list every benefit of meditation here, but the most noticeable 
 
 ## 3. Wind down with purpose
 
-```
- ✏️ Habit 3: Reflect on today and pick priority for tomorrow
-```
+{{< callout type="custom" emoji="✒️" title="Journal" text="Reflect on today and pick priority for tomorrow" >}}
 
 This is not about writing an essay or time-blocking every hour of your day. The idea is to reflect events and actions for today and set a clear intention for the next day. I think of this like a GitHub commit, logging my daily progress before moving on to the next version.
 

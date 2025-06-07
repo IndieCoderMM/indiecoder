@@ -4,7 +4,7 @@ title = "IndieCoder"
 theme="archie"
 copyright = "Hein Thant"
 # Code Highlight
-pygmentsstyle = "github-dark"
+pygmentsstyle = "native" # github-dark, 
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 

@@ -20,10 +20,11 @@ hr {
 }
 
 code {
-  background-color: #0d1117;
+  background-color: #333;
   color: #fff;
   text-decoration: bold;
   padding: 0.1em 0.2em;
+  border-radius: 3px;
 }
 
 pre {
@@ -132,6 +133,12 @@ a:hover {
   background-color: blue;
 }
 
+.highlight pre ::selection {
+  background: var(--darkHoverColor);
+  color: black;
+  text-shadow: none;
+}
+
 .highlight pre code[class=language-javaScript]::before,
 .highlight pre code[class="language-js"]::before {
   content: "js";
@@ -196,6 +203,10 @@ a:hover {
 
 .callout-custom {
   color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333;
+  background-color: #1e1e1e;
 }
 
 .callout-tip {
