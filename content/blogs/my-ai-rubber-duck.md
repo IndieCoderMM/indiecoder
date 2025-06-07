@@ -28,7 +28,7 @@ It works similar to `setTimeout` and defers a function call untill:
 
 I tried using `setTimeout`, but it didn't work. And, the issue only happening on the first focus is likey due to browser's internal focus logic and a cold start case, but I'm not planning to do research on this. I'm not even sure if this is a correct approach, but I don't mind as long as it solves my problem.
 
-What I really took away from this is *how AI will replace us*. I believe **AI is going to replace developers, but *only in boring parts**. This kind of oddly specific bug could take hours to figure out on my own, which would involve a lot of reading, diving into StackOverflow or getting lost in endless threads on GitHub. Within a few seconds, *ChatGPT* could do all the research and come up with seemingly relevant solutions.
+What I really took away from this is *how AI will replace us*. I believe **AI is going to replace developers, but only in boring parts**. This kind of oddly specific bug could take hours to figure out on my own, which would involve a lot of reading, diving into StackOverflow or getting lost in endless threads on GitHub. Within a few seconds, *ChatGPT* could do all the research and come up with seemingly relevant solutions.
 
 Of course, dumping a buggy codebase into a prompt and yelling at an LLM to *just fix it* won't work. Instead, I treat it like  *a rubber duck*. You've probably heard of **rubber duck debugging**. Now, imagine what you could do if your cute little duck could talk back, and had access to the entire knowledge base of humankind. You explain your problem, it responds with suggestions, edge cases, or even ideas you hadn’t considered. That's how I use AI, **not to replace thinking, but to boost it**.
 
