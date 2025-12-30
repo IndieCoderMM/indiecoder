@@ -10,7 +10,7 @@ body {
 }
 
 ::selection {
-  background: var(--highlight);
+  background: var(--darkMainColor);
   color: black;
   text-shadow: none;
 }
@@ -35,7 +35,10 @@ pre {
 }
 
 blockquote {
-  border-color: blue;
+  color: #fff;
+  border-color: var(--darkMainColor);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.05em 1em;
 }
 
 h1,
