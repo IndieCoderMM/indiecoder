@@ -2,7 +2,7 @@ baseURL = "https://indiecoder.vercel.app/"
 languageCode = "en-us"
 title = "IndieCoder"
 theme="archie"
-copyright = "Hein Thant"
+copyright = "indiecoder"
 # Code Highlight
 pygmentsstyle = "native" # github-dark, 
 pygmentscodefences = true

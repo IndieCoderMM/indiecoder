@@ -33,7 +33,7 @@
 
 html {
   color: var(--night);
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono", "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -175,6 +175,10 @@ header {
   justify-content: space-between;
   margin: 1em 0;
   line-height: 2.5em;
+  position: sticky;
+  top: 0;
+  background-color: var(--night);
+  padding-bottom: 10px;
 }
 
 header .main {
@@ -318,7 +322,7 @@ article .title {
 }
 
 .callout p {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
 }
 
@@ -574,7 +578,7 @@ table td {
 .menu {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   align-items: center;
   top: 0;
   left: 0;
@@ -602,7 +606,8 @@ table td {
 }
 
 .menu a:hover {
-  color: #f0f0f0;
+  background-color: var(--hovercolor);
+  color: #000;
 }
 
 .menu a:active {
@@ -628,5 +633,37 @@ table td {
 
   .mobile-menu {
     display: flex;
+  }
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--darkMainColor);
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  animation: fadeIn 0.5s;
+}
+
+#topBtn:hover {
+  background-color: var(--hovercolor);
+  color: var(--night);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
